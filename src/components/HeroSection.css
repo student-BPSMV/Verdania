@@ -1,0 +1,27 @@
+.garden-section{
+    background-image : url("../assets/images/garden.webp");
+    height: 700px;
+    background-size: cover;
+    position: relative;
+    background-position: center;
+    width: 100%;
+    /* opacity: 0.8;
+    filter: blur(5px); */
+}
+
+.garden-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(255,255,255, 0.2);
+    backdrop-filter: blur(10px);
+}
+.container{
+    position: relative;
+    z-index: 1;
+    color: white;
+    padding: 20px;
+}
