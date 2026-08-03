@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <nav>
         <header
-          class="fixed top-0 left-1/2 -translate-x-1/2 z-50
+          class="fixed top-5 left-1/2 -translate-x-1/2 z-50
 w-[90%] max-w-7xl
 px-6 py-2
 flex items-center justify-between

@@ -5,14 +5,14 @@ function HeroSection() {
   return (
     <section className="garden-section flex items-center justify-center">
       <div
-        className="container w-full max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-center gap-10"
+        className="container w-full max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-around items-center gap-10"
         data-aos="fade-up"
       >
         {/* Left Side Content */}
         <div className="content max-w-lg">
           <h1 className="text-4xl font-bold leading-tight font-sans">
             Welcome to{" "}
-            <span className="text-6xl text-green-500 text-shadow-lg font-serif block sm:inline">
+            <span className="text-6xl text-green-500 text-shadow-lg font-serif block sm:inline mt-2">
               VERDANIA
             </span>
           </h1>
