@@ -8,15 +8,15 @@ function About() {
         <div className="main-container">
           <div className="content-part mt-20 ml-30 mr-30">
             <h3
-              className="text-md font-bold text-green-700"
+              className="text-md font-bold text-green-500"
               data-aos="fade-down"
             >
               ABOUT VERDANIA
             </h3>
             <h1 className="font-bold text-3xl font-serif" data-aos="fade-down">
               A Sanctuary of{" "}
-              <span className="text-4xl text-green-700">Green</span>,<br></br>A
-              World of <span className="text-4xl text-green-700">Peace</span>
+              <span className="text-4xl text-green-500">Green</span>,<br></br>A
+              World of <span className="text-4xl text-green-500">Peace</span>
             </h1>
             <p className="w-[950px] mt-5" data-aos="fade-down">
               Welcome to Verdania, a virtual sanctuary where the timeless beauty

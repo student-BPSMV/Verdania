@@ -10,6 +10,10 @@ import HeroSection from "./components/HeroSection";
 import Cards from "./components/Cards";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import Flowers from "./components/Flowers";
+import Gardentips from "./components/Gardentips";
+import Plants from "./components/Plants";
+import Worldwide from "./components/Worldwide";
 
 function App() {
   useEffect(() => {
@@ -28,6 +32,10 @@ function App() {
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/explore" element={<Cards></Cards>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
+          <Route path="/flowers" element={<Flowers></Flowers>}></Route>
+          <Route path="/garden" element={<Gardentips></Gardentips>}></Route>
+          <Route path="/plants" element={<Plants></Plants>}></Route>
+          <Route path="/worldwide" element={<Worldwide></Worldwide>}></Route>
         </Routes>
       </BrowserRouter>
     </>

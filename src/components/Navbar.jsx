@@ -8,12 +8,12 @@ function Navbar() {
         <header
           class="fixed top-5 left-1/2 -translate-x-1/2 z-50
 w-[90%] max-w-7xl
-px-6 py-2
+px-4 py-0
 flex items-center justify-between
 rounded-full
 bg-green-800/10
 backdrop-blur-xl
-border border-white/20
+border-2 border-green-300/20
 shadow-2xl"
           data-aos="zoom-in"
         >
@@ -50,16 +50,16 @@ duration-200"
               >
                 Contact Us
               </Link>
+              {/* <i className="fa-solid fa-sliders hidden sm:inline mr-5 text-whitehover:text-lime-500 hover:text-xl transition-all duration-200"></i> */}
             </nav>
             <a class="flex lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
-              <span class="ml-3 font-bold text-3xl tracking-wide text-white hover:text-green-800 font-serif">
+              <span class="ml-3 font-bold text-3xl tracking-wide text-white hover:text-green-500 font-serif">
                 Verdania
               </span>
             </a>
             <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
               <button
-                class="inline-flex items-center bg-emerald-700
-hover:bg-emerald-800
+                class="inline-flex items-center bg-gradient-to-r from-green-500 via-green-600 to-green-700 
 text-white
 font-semibold
 px-6

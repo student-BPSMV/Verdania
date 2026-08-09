@@ -3,86 +3,222 @@ import ContactBg from "../assets/images/contact.png";
 
 function Contact() {
   return (
-    <>
-      <section class="text-gray-600 body-font relative mt-35">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full mb-12">
-            <h1
-              class="text-2xl  font-serif font-medium text-green-800 title-font mb-4 -ml-8"
-              data-aos="zoom-out"
-            >
-              🌿 Let's Grow Together
-            </h1>
-            <p
-              class="lg:w-2/3 mx-auto leading-relaxed font-serif text-black text-4xl"
-              data-aos="zoom-out"
-            >
-              We'd Love To Hear From You
-            </p>
-          </div>
-          <div
-            class="contact-container w-[800px] h-[450px] mx-auto border-1 p-10 rounded-[25px]  bg-white/10 backdrop-blur-2xl border border-white/20 shadow-2xl hover:scale-105"
-            style={{ backgroundImage: `url(${ContactBg})` }}
-            data-aos="zoom-in"
-          >
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label
-                    for="name"
-                    class="leading-7 text-lg font-bold text-green-700"
-                  >
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    class="w-full mt-3 bg-white bg-opacity-50 rounded  border-green-700 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                </div>
-              </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label
-                    for="email"
-                    class="leading-7 text-lg font-bold text-green-700"
-                  >
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    class="w-full mt-3 bg-white bg-opacity-50 rounded border-green-700 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                  />
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label
-                    for="message"
-                    class="leading-7 text-lg font-bold text-green-700"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    class="w-full mt-3 bg-white bg-opacity-50 rounded border-green-700 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                  ></textarea>
-                </div>
-              </div>
-              <div class="p-2 w-full">
-                <button class="flex gap-5 justify-center items-center mt-5 mx-auto w-full text-white bg-green-700 font-bold border-0 py-2 focus:outline-none px-auto hover:bg-green-600 rounded text-lg hover:scale-105">
-                  <i class="fa-solid fa-paper-plane"></i> Send
-                </button>
-              </div>
+    <section className="min-h-screen py-20 px-6 flex items-center mt-10">
+      <div className="max-w-6xl w-full mx-auto grid grid-cols-2 gap-16 items-center">
+        {/* ================= LEFT SIDE ================= */}
+
+        <div className="text-gray-800" data-aos="fade-right">
+          <p className="text-green-700 font-bold tracking-[4px] text-sm mb-4">
+            GET IN TOUCH
+          </p>
+
+          <h1 className="text-5xl font-serif font-bold leading-tight mb-6">
+            Let's Grow
+            <span className="text-green-700"> Together</span>
+          </h1>
+
+          <p className="text-xl font-semibold text-gray-700 mb-5">
+            We'd Love To Hear From You 🌿
+          </p>
+
+          <p className="text-gray-600 text-md leading-8 max-w-md">
+            Have a question, suggestion, or simply want to share your love for
+            nature? We'd love to hear from you and talk about plants, flowers,
+            gardens, and the beauty of nature.
+          </p>
+
+          {/* Small contact details */}
+
+          <div className="mt-8 space-y-4">
+            <div className="flex items-center gap-4">
+              <span
+                className="
+                w-11 h-11
+                rounded-full
+                bg-green-700/10
+                text-green-700
+                flex items-center justify-center
+              "
+              >
+                <i className="fa-solid fa-envelope"></i>
+              </span>
+
+              <span className="text-gray-700">hello@verdania.com</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <span
+                className="
+                w-11 h-11
+                rounded-full
+                bg-green-700/10
+                text-green-700
+                flex items-center justify-center
+              "
+              >
+                <i className="fa-solid fa-leaf"></i>
+              </span>
+
+              <span className="text-gray-700">Explore • Learn • Grow</span>
             </div>
           </div>
         </div>
-      </section>
-    </>
+
+        {/* ================= RIGHT SIDE FORM ================= */}
+
+        <div
+          className="
+            w-full
+            p-10
+            rounded-[25px]
+            bg-white/20
+            backdrop-blur-2xl
+            border
+            border-white/30
+            shadow-2xl
+          "
+          style={{
+            backgroundImage: `url(${ContactBg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+          data-aos="zoom-in"
+        >
+          {/* Inner overlay */}
+
+          <div
+            className="
+            bg-white/50
+            backdrop-blur-xl
+            rounded-2xl
+            p-7
+          "
+          >
+            <form>
+              {/* NAME + EMAIL */}
+
+              <div className="grid grid-cols-2 gap-5">
+                <div>
+                  <label
+                    htmlFor="name"
+                    className="block text-green-800 font-bold mb-2"
+                  >
+                    Name
+                  </label>
+
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Your name"
+                    className="
+                      w-full
+                      px-4
+                      py-3
+                      rounded-lg
+                      bg-white/90
+                      border
+                      border-green-700/20
+                      outline-none
+                      focus:border-green-600
+                      focus:ring-2
+                      focus:ring-green-500/20
+                    "
+                  />
+                </div>
+
+                <div>
+                  <label
+                    htmlFor="email"
+                    className="block text-green-800 font-bold mb-2"
+                  >
+                    Email
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Your email"
+                    className="
+                      w-full
+                      px-4
+                      py-3
+                      rounded-lg
+                      bg-white/90
+                      border
+                      border-green-700/20
+                      outline-none
+                      focus:border-green-600
+                      focus:ring-2
+                      focus:ring-green-500/20
+                    "
+                  />
+                </div>
+              </div>
+
+              {/* MESSAGE */}
+
+              <div className="mt-6">
+                <label
+                  htmlFor="message"
+                  className="block text-green-800 font-bold mb-2"
+                >
+                  Message
+                </label>
+
+                <textarea
+                  id="message"
+                  rows="6"
+                  placeholder="Write your message..."
+                  className="
+                    w-full
+                    px-4
+                    py-3
+                    rounded-lg
+                    bg-white/90
+                    border
+                    border-green-700/20
+                    outline-none
+                    resize-none
+                    focus:border-green-600
+                    focus:ring-2
+                    focus:ring-green-500/20
+                  "
+                ></textarea>
+              </div>
+
+              {/* SEND BUTTON */}
+
+              <button
+                type="submit"
+                className="
+                  w-full
+                  mt-6
+                  py-3
+                  rounded-lg
+                  bg-gradient-to-r
+                  from-green-700
+                  to-emerald-500
+                  text-white
+                  font-bold
+                  text-lg
+                  flex
+                  items-center
+                  justify-center
+                  gap-3
+                  transition-all
+                  duration-300
+                  hover:scale-[1.02]
+                  hover:shadow-xl
+                "
+              >
+                <i className="fa-solid fa-paper-plane"></i>
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
