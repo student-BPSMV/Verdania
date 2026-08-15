@@ -1,4 +1,5 @@
 import React from "react";
+
 import Pic_1 from "../assets/images/f1.jpg";
 import Pic_2 from "../assets/images/f2.jpg";
 import Pic_3 from "../assets/images/f3.jpg";
@@ -15,9 +16,109 @@ import Pic_13 from "../assets/images/f14.jpg";
 import Pic_14 from "../assets/images/f16.jpg";
 import Pic_15 from "../assets/images/japanes_cherry.jpg";
 import Pic_16 from "../assets/images/f17.jpg";
+
 import Flower_bg from "../assets/images/flower-bg.png";
 
 function Flowers() {
+  const flowers = [
+    {
+      image: Pic_1,
+      name: "Hydrangea",
+      category: "Flowering Plant",
+      price: "$8.00",
+    },
+    {
+      image: Pic_2,
+      name: "Hibiscus",
+      category: "Tropical Flower",
+      price: "$35.00",
+    },
+    {
+      image: Pic_3,
+      name: "Rose of Sharon",
+      category: "Flowering Shrub",
+      price: "$25.00",
+    },
+    {
+      image: Pic_4,
+      name: "Water Lily",
+      category: "Aquatic Plant",
+      price: "$30.40",
+    },
+    {
+      image: Pic_5,
+      name: "Water Hyacinth",
+      category: "Floating Aquatic Plant",
+      price: "$16.00",
+    },
+    {
+      image: Pic_6,
+      name: "White Water Lily",
+      category: "Aquatic Plant",
+      price: "$34.15",
+    },
+    {
+      image: Pic_7,
+      name: "Echium",
+      category: "Ornamental Flowering Plant",
+      price: "$12.00",
+    },
+    {
+      image: Pic_8,
+      name: "Dahlia",
+      category: "Ornamental Plant",
+      price: "$20.40",
+    },
+    {
+      image: Pic_9,
+      name: "Sunflower",
+      category: "Ornamental Flower",
+      price: "$50.00",
+    },
+    {
+      image: Pic_10,
+      name: "Water Poppy",
+      category: "Aquatic Flower",
+      price: "$15.00",
+    },
+    {
+      image: Pic_11,
+      name: "Lotus",
+      category: "Sacred Flower",
+      price: "$5.00",
+    },
+    {
+      image: Pic_12,
+      name: "Hibiscus",
+      category: "Tropical Flower",
+      price: "$45.00",
+    },
+    {
+      image: Pic_13,
+      name: "Rose Mallow",
+      category: "Perennial Flower",
+      price: "$30.00",
+    },
+    {
+      image: Pic_14,
+      name: "Cherry Blossom",
+      category: "Ornamental Flower",
+      price: "$65.00",
+    },
+    {
+      image: Pic_15,
+      name: "Hibiscus",
+      category: "Ornamental Flowering Plant",
+      price: "$35.00",
+    },
+    {
+      image: Pic_16,
+      name: "Bougainvillea",
+      category: "Ornamental Flowering Plant",
+      price: "$35.00",
+    },
+  ];
+
   return (
     <>
       <section
@@ -33,6 +134,7 @@ function Flowers() {
         <div className="absolute inset-0 bg-white/50"></div>
 
         <div className="relative z-10">
+          {/* Heading */}
           <div className="mt-40 text-center" data-aos="zoom-in">
             <h1
               className="font-serif font-bold text-4xl text-green-700"
@@ -40,363 +142,80 @@ function Flowers() {
             >
               50+ <span className="text-3xl text-black">Flowers</span>
             </h1>
+
             <h3 className="mt-5 text-md">
-              Every flower is a soul blossoming in nature.<br></br>
+              Every flower is a soul blossoming in nature.
+              <br />
               Let us live like flowers, wild and beautiful and drenched in sun.
             </h3>
           </div>
 
+          {/* Flower Cards */}
           <section className="text-gray-600 body-font">
-            <div className="container px-5 py-15 mx-auto">
-              <div className="flex flex-wrap -m-4">
-                {/* Plant Cards */}
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hydrangea"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_1}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Flowering Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Hydrangea
-                    </h2>
-                    <p className="mt-1 text-black">$8.00</p>
-                  </div>
-                </div>
+            <div className="container px-5 py-10 mx-auto">
+              <div className="flex flex-wrap justify-between gap-y-6">
+                {flowers.map((flower, index) => (
+                  <div
+                    key={index}
+                    className="lg:w-[23.5%] md:w-[48%] p-4 w-full border-1 rounded-2xl shadow-xl bg-white"
+                    data-aos="slide-up"
+                  >
+                    <a className="block relative h-48 rounded overflow-hidden">
+                      <img
+                        src={flower.image}
+                        alt={flower.name}
+                        className="object-cover object-center w-full h-full block"
+                      />
+                    </a>
 
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_2}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Tropical Flower
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Hibiscus
-                    </h2>
-                    <p className="mt-1 text-black">$35.00</p>
-                  </div>
-                </div>
+                    <div className="mt-4">
+                      <div className="flex justify-between items-center">
+                        <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
+                          {flower.category}
+                        </h3>
+                        <div className="icons flex text-yellow-300 text-xs">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                      </div>
 
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Rose of Sharon"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_3}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Flowering Shrub
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Rose of Sharon
-                    </h2>
-                    <p className="mt-1 text-black">$25.00</p>
+                      <h2 className="text-gray-900 pt-3 title-font text-md font-serif text-green-700 font-bold">
+                        {flower.name}
+                      </h2>
+                      <div className="flex justify-between items-center">
+                        <p className="mt-1 text-black text-lg font-bold">
+                          {flower.price}
+                        </p>
+                        <i class="fa-solid fa-arrow-right-long text-green-700 text-md"></i>
+                      </div>
+                    </div>
                   </div>
-                </div>
-
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Water Lily"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_4}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Aquatic Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Water Lily
-                    </h2>
-                    <p className="mt-1 text-black">$30.40</p>
-                  </div>
-                </div>
-
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Water Hyacinth"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_5}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Floating Aquatic Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Water Hyacinth
-                    </h2>
-                    <p className="mt-1 text-black">$16.00</p>
-                  </div>
-                </div>
-
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="White Water Lily"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_6}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Aquatic Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      White Water Lily
-                    </h2>
-                    <p className="mt-1 text-black">$34.15</p>
-                  </div>
-                </div>
-
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Echium"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_7}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Ornamental Flowering Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Echium
-                    </h2>
-                    <p className="mt-1 text-black">$12.00</p>
-                  </div>
-                </div>
-
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Lily of the Valley"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_8}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Ornamental Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Dahlia
-                    </h2>
-                    <p className="mt-1 text-black">$20.40</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_9}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Ornamental Flower
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Sunflower
-                    </h2>
-                    <p className="mt-1 text-black">$50.00</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_10}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Aquatic Flower
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Water Poppy
-                    </h2>
-                    <p className="mt-1 text-black">$15.00</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_11}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Sacred Flower
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Lotus
-                    </h2>
-                    <p className="mt-1 text-black">$5.00</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_12}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Tropical Flower
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Hibiscus
-                    </h2>
-                    <p className="mt-1 text-black">$45.00</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_13}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Perennial Flower
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Rose Mallow
-                    </h2>
-                    <p className="mt-1 text-black">$30.00</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_14}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Ornamental Flower
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Cherry Blossom
-                    </h2>
-                    <p className="mt-1 text-black">$65.00</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_15}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Ornamental Flowering Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Hibiscus
-                    </h2>
-                    <p className="mt-1 text-black">$35.00</p>
-                  </div>
-                </div>
-                <div
-                  className="lg:w-1/4 md:w-1/2 p-4 w-full"
-                  data-aos="slide-up"
-                >
-                  <a className="block relative h-48 rounded overflow-hidden">
-                    <img
-                      alt="Hibiscus"
-                      className="object-cover object-center w-full h-full block"
-                      src={Pic_16}
-                    />
-                  </a>
-                  <div className="mt-4">
-                    <h3 className="text-gray-500 text-xs tracking-widest title-font mb-1">
-                      CATEGORY : Ornamental Flowering Plant
-                    </h3>
-                    <h2 className="text-gray-900 title-font text-lg font-medium font-serif">
-                      Bougainvillea
-                    </h2>
-                    <p className="mt-1 text-black">$35.00</p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
-            
           </section>
+          <div className="flex justify-center mt-12 pb-10">
+            <button
+              className="
+              px-8 py-3
+              rounded-full
+              bg-green-700
+              text-white
+              font-semibold
+              shadow-lg
+              hover:bg-green-800
+              hover:scale-105
+              transition-all
+              duration-300
+            "
+            >
+              Explore More
+              <i className="fa-solid fa-arrow-right ml-2"></i>
+            </button>
+          </div>
         </div>
       </section>
     </>
