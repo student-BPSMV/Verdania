@@ -206,14 +206,14 @@ function Plants() {
         {/* ================= HEADING ================= */}
         <div className="heading text-center mt-40 relative z-10">
           <h1
-            className="font-serif font-bold text-4xl text-green-700"
+            className="font-serif font-bold text-5xl text-green-700"
             data-aos="zoom-in"
           >
             30+
-            <span className="text-3xl text-black"> Plants</span>
+            <span className="text-4xl text-black"> Plants</span>
           </h1>
 
-          <h3 className="mt-5 text-black text-sm" data-aos="zoom-in">
+          <h3 className="mt-7 text-black text-lg font-serif" data-aos="zoom-in">
             Explore a wide variety of indoor, outdoor & flowering Plants
             <br />
             to bring nature closer to you
@@ -221,7 +221,7 @@ function Plants() {
 
           {/* ================= CATEGORY BUTTONS ================= */}
           <div
-            className="btn-group flex gap-5 justify-start ml-35 items-center mt-7"
+            className="btn-group flex gap-5 justify-start ml-35 items-center mt-8"
             data-aos="fade-up"
           >
             {[

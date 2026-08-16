@@ -137,13 +137,13 @@ function Flowers() {
           {/* Heading */}
           <div className="mt-40 text-center" data-aos="zoom-in">
             <h1
-              className="font-serif font-bold text-4xl text-green-700"
+              className="font-serif font-bold text-5xl text-green-700"
               data-aos="zoom-out"
             >
-              50+ <span className="text-3xl text-black">Flowers</span>
+              50+ <span className="text-4xl text-black">Flowers</span>
             </h1>
 
-            <h3 className="mt-5 text-md">
+            <h3 className="mt-8 text-lg font-serif">
               Every flower is a soul blossoming in nature.
               <br />
               Let us live like flowers, wild and beautiful and drenched in sun.

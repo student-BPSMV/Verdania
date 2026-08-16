@@ -9,7 +9,7 @@ import Plant_1 from "../assets/images/f1.jpg";
 function Worldwide() {
   return (
     <>
-      <section className="relative overflow-hidden py-20 px-6 bg-[#f8faf5] mt-15">
+      <section className="relative overflow-hidden py-38 px-6 bg-[#f8faf5] ">
         {/* ================= HEADER ================= */}
         <div className="max-w-6xl mx-auto text-center mb-14">
           <h1
